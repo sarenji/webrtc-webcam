@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ben + David's webchat</title>
+  </head>
+  <body onload="init();">
+    <video id="vidcam" autoplay></video>
+    <video id="remotecam" autoplay></video>
+    <br>
+    <input type="radio" name="buttons" id="normal" checked="checked"/> Normal
+    <input type="radio" name="buttons" id="sepia"/> Sepia
+    <input type="radio" name="buttons" id="bizarre"/> Bizarre
+    <input type ="button" value="Take Photo" onclick="takePhoto();">
+    <br>
+    <canvas id="photo"></canvas>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+
